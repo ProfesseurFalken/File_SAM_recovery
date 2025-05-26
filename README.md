@@ -5,7 +5,10 @@ A Python tool to recover or analyze corrupted or deleted `.sam` files from Ami P
 ## Features
 - Extract readable text from corrupted `.sam` files.
 - Analyze binary structure and display hexadecimal view.
+- Extract potential images (JPEG, PNG) embedded in `.sam` files.
+- Retrieve file metadata (creation and modification dates).
 - Attempt recovery of deleted `.sam` files using TestDisk.
+- Combined mode (`all`) for full analysis (text, binary, images, metadata).
 
 ## Requirements
 - Python 3.6+
@@ -14,27 +17,5 @@ A Python tool to recover or analyze corrupted or deleted `.sam` files from Ami P
 
 ## Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/recover_sam.git
-
-Usage
-Run the script with:
-bash
-
-python recover_sam.py <file_path> --mode <mode> --output <output_folder>
-
-<file_path>: Path to the .sam file or disk (e.g., C:\ for TestDisk).
-
-<mode>: text (extract text), binary (analyze binary), testdisk (recover deleted file).
-
-<output_folder>: Folder to save results (default: output).
-
-Example:
-bash
-
-python recover_sam.py document.sam --mode text --output results
-python recover_sam.py C:\ --mode testdisk --output results
-
-Output
-Results are saved in the specified output folder with a timestamp (e.g., recovered_sam_20250526_153500.txt).
-
+   bash  git clone https://github.com/ProfesseurFalken/File_SAM-recovery.git
+      
